@@ -17,4 +17,7 @@ public class OpenLinks : MonoBehaviour
 
     public void SoundCredit()
     { Application.OpenURL("https://www.zapsplat.com"); }
+
+    public void QuestionnaireLink()
+    { Application.OpenURL("https://forms.gle/UTPj2thL54yQryxMA"); }
 }

@@ -21,7 +21,22 @@ public class MainMenu : MonoBehaviour
     }
 
     public void PlayGame()
-    { SceneManager.LoadScene("GameScene"); } // Loads the game.
+    { SceneManager.LoadScene("GameScene"); } // Loads the first level
+
+    public void Level2()
+    { SceneManager.LoadScene("Level2"); } // loads the second level
+
+    public void Level3()
+    { SceneManager.LoadScene("Level3"); } // loads the second level
+
+    public void Level4()
+    { SceneManager.LoadScene("Level4"); } // loads the second level
+
+    public void Level5()
+    { SceneManager.LoadScene("Level5"); } // loads the second level
+
+    public void Level6()
+    { SceneManager.LoadScene("Level6"); } // loads the second level
 
     public void QuitGame()
     {

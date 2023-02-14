@@ -13,15 +13,15 @@ public class ItemCollector : MonoBehaviour
     bool redGem;
     bool blueGem;
     bool greenGem;
-    [SerializeField] TMP_Text silverCoinsText;
-    [SerializeField] TMP_Text goldCoinsText;
-    [SerializeField] Image blueGemUI;
-    [SerializeField] Image redGemUI;
-    [SerializeField] Image greenGemUI;
+    [SerializeField] TMP_Text silverCoinsText; // UI text showing silver coins collected
+    [SerializeField] TMP_Text goldCoinsText; // ditto, gold
+    [SerializeField] Image blueGemUI; // UI image that becomes coloured in when blue gem collected
+    [SerializeField] Image redGemUI; // ditto, red
+    [SerializeField] Image greenGemUI; // ditto, green
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Coin_S"))
+        if (collision.gameObject.CompareTag("Coin_S"))
         {
             Destroy(collision.gameObject); // destroys the collectible when it's been touched
             silverCoins++;
@@ -35,25 +35,25 @@ public class ItemCollector : MonoBehaviour
             goldCoinsText.text = goldCoins + " / 5";
         }
 
-        if(collision.gameObject.CompareTag("Gem_R"))
+        if (collision.gameObject.CompareTag("Gem_R"))
         {
             Destroy(collision.gameObject); // destroys the collectible when it's been touched
             redGem = true;
-            redGemUI.GetComponent<Image>().color = new Color32(255,255,255,255); // makes the image 'white', aka not silhouetted
+            redGemUI.GetComponent<Image>().color = new Color32(255, 255, 255, 255); // makes the image 'white', aka not silhouetted
         }
 
-        if(collision.gameObject.CompareTag("Gem_B"))
+        if (collision.gameObject.CompareTag("Gem_B"))
         {
             Destroy(collision.gameObject); // destroys the collectible when it's been touched
             blueGem = true;
-            blueGemUI.GetComponent<Image>().color = new Color32(255,255,255,255); // makes the image 'white', aka not silhouetted
+            blueGemUI.GetComponent<Image>().color = new Color32(255, 255, 255, 255); // makes the image 'white', aka not silhouetted
         }
 
-        if(collision.gameObject.CompareTag("Gem_G"))
+        if (collision.gameObject.CompareTag("Gem_G"))
         {
             Destroy(collision.gameObject); // destroys the collectible when it's been touched
             greenGem = true;
-            greenGemUI.GetComponent<Image>().color = new Color32(255,255,255,255); // makes the image 'white', aka not silhouetted
+            greenGemUI.GetComponent<Image>().color = new Color32(255, 255, 255, 255); // makes the image 'white', aka not silhouetted
         }
     }
 }

@@ -578,7 +578,7 @@ GameObject:
   - component: {fileID: 261488999}
   - component: {fileID: 261488998}
   m_Layer: 5
-  m_Name: Level3% (2)
+  m_Name: Level6% text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -702,7 +702,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -1172,7 +1172,7 @@ GameObject:
   - component: {fileID: 505315917}
   - component: {fileID: 505315916}
   m_Layer: 5
-  m_Name: Level 3 Button (1)
+  m_Name: Level 5 Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1781,7 +1781,7 @@ GameObject:
   - component: {fileID: 746772493}
   - component: {fileID: 746772492}
   m_Layer: 5
-  m_Name: Level2% (1)
+  m_Name: Level4% text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1905,7 +1905,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -2260,7 +2260,7 @@ GameObject:
   - component: {fileID: 867594397}
   - component: {fileID: 867594396}
   m_Layer: 5
-  m_Name: Level1%
+  m_Name: Level1% text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2384,7 +2384,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -2544,7 +2544,7 @@ GameObject:
   - component: {fileID: 914065984}
   - component: {fileID: 914065983}
   m_Layer: 5
-  m_Name: Level3%
+  m_Name: Level3% text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2668,7 +2668,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -2975,7 +2975,7 @@ GameObject:
   - component: {fileID: 1154584420}
   - component: {fileID: 1154584419}
   m_Layer: 5
-  m_Name: Level 2 Button (1)
+  m_Name: Level 4 Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3515,7 +3515,7 @@ GameObject:
   - component: {fileID: 1370709438}
   - component: {fileID: 1370709437}
   m_Layer: 5
-  m_Name: Level3% (1)
+  m_Name: Level5% text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3639,7 +3639,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -4006,7 +4006,7 @@ GameObject:
   - component: {fileID: 1523672960}
   - component: {fileID: 1523672959}
   m_Layer: 5
-  m_Name: Level 3 Button (2)
+  m_Name: Level 6 Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4273,7 +4273,7 @@ GameObject:
   - component: {fileID: 1597150895}
   - component: {fileID: 1597150894}
   m_Layer: 5
-  m_Name: Level2%
+  m_Name: Level2% text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4397,7 +4397,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -4553,7 +4553,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -5615,7 +5615,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6fb22172671f1a4bbc204be320c8c8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playButton: {fileID: 310468291}
 --- !u!1 &2103567048
 GameObject:
   m_ObjectHideFlags: 0

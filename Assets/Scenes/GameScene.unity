@@ -10095,6 +10095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 501450b45bd1b5342b0c8ab6c4fea09d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pause: {fileID: 1432517025}
   jumpableGround:
     serializedVersion: 2
     m_Bits: 256

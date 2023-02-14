@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     SpriteRenderer sprite;
     Animator anim;
     BoxCollider2D coll;
+    public GameObject pause;
 
     [SerializeField] LayerMask jumpableGround;
 
@@ -37,6 +38,11 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetButtonDown("Jump") && IsGrounded()) // prevents holding space to fly off
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        }
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            pause.SetActive(true);
         }
 
         UpdateAnimation();

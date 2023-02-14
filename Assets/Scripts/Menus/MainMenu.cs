@@ -12,8 +12,6 @@ public class MainMenu : MonoBehaviour
         Click on the buttons, then add one of the two methods below via the 'OnClicked' part that handles events in the inspector.         
     */
 
-    public GameObject playButton; // play button
-
     private void Start()
     {
         Cursor.visible = true;
@@ -37,6 +35,9 @@ public class MainMenu : MonoBehaviour
 
     public void Level6()
     { SceneManager.LoadScene("Level6"); } // loads the second level
+
+    public void BackToMenu()
+    { SceneManager.LoadScene("MainMenu"); } // loads the second level
 
     public void QuitGame()
     {

@@ -38,7 +38,7 @@ public class SettingsMenu : MonoBehaviour
 
     public void SetSFXLevel(float xSliderValue)
     {
-        musicMixer.SetFloat("SFXVolume", Mathf.Log10(xSliderValue) * 20);
+        SFXMixer.SetFloat("SFXVolume", Mathf.Log10(xSliderValue) * 20);
 
         PlayerPrefs.SetFloat("SFXVolume", xSliderValue);
     }

@@ -37,7 +37,10 @@ public class MainMenu : MonoBehaviour
     { SceneManager.LoadScene("Level6"); } // loads the second level
 
     public void BackToMenu()
-    { SceneManager.LoadScene("MainMenu"); } // loads the second level
+    {
+        DataManager.Instance.SaveGame();
+        SceneManager.LoadScene("MainMenu");
+    } // loads the second level
 
     public void QuitGame()
     {

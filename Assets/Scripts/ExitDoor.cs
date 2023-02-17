@@ -13,12 +13,15 @@ public class ExitDoor : MonoBehaviour
         finishSound = GetComponent<AudioSource>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if(collision.gameObject.name == "Player")
         {
-            finishSound.Play();
-            CompleteLevel();
+            if(Input.GetKeyDown(KeyCode.E))
+            {
+                finishSound.Play();
+                CompleteLevel();
+            }
         }
     }
 

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6378343878634295879}
   - component: {fileID: 6378343878634295928}
   m_Layer: 0
-  m_Name: Silver Coin
+  m_Name: Coin_S
   m_TagString: Coin_S
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

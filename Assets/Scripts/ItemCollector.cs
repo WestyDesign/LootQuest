@@ -18,6 +18,14 @@ public class ItemCollector : MonoBehaviour
     [SerializeField] Image blueGemUI; // UI image that becomes coloured in when blue gem collected
     [SerializeField] Image redGemUI; // ditto, red
     [SerializeField] Image greenGemUI; // ditto, green
+    [SerializeField] AudioSource silverCoinSound;
+    [SerializeField] AudioSource goldCoinSound;
+    [SerializeField] AudioSource gemSound;
+
+    private void Start()
+    {
+        DataManager.Instance.LoadGame();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -25,6 +33,8 @@ public class ItemCollector : MonoBehaviour
         {
             Destroy(collision.gameObject); // destroys the collectible when it's been touched
             silverCoins++;
+            DataManager.Instance.Level1Silver++;
+            silverCoinSound.Play();
             silverCoinsText.text = silverCoins + " / 10";
         }
 
@@ -32,6 +42,8 @@ public class ItemCollector : MonoBehaviour
         {
             Destroy(collision.gameObject); // destroys the collectible when it's been touched
             goldCoins++;
+            DataManager.Instance.Level1Gold++;
+            goldCoinSound.Play();
             goldCoinsText.text = goldCoins + " / 5";
         }
 
@@ -39,6 +51,7 @@ public class ItemCollector : MonoBehaviour
         {
             Destroy(collision.gameObject); // destroys the collectible when it's been touched
             redGem = true;
+            gemSound.Play();
             redGemUI.GetComponent<Image>().color = new Color32(255, 255, 255, 255); // makes the image 'white', aka not silhouetted
         }
 
@@ -46,6 +59,7 @@ public class ItemCollector : MonoBehaviour
         {
             Destroy(collision.gameObject); // destroys the collectible when it's been touched
             blueGem = true;
+            gemSound.Play();
             blueGemUI.GetComponent<Image>().color = new Color32(255, 255, 255, 255); // makes the image 'white', aka not silhouetted
         }
 
@@ -53,7 +67,11 @@ public class ItemCollector : MonoBehaviour
         {
             Destroy(collision.gameObject); // destroys the collectible when it's been touched
             greenGem = true;
+            gemSound.Play();
             greenGemUI.GetComponent<Image>().color = new Color32(255, 255, 255, 255); // makes the image 'white', aka not silhouetted
         }
+
+
+        DataManager.Instance.SaveGame(); // saves the game
     }
 }

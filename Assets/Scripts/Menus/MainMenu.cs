@@ -19,7 +19,7 @@ public class MainMenu : MonoBehaviour
     }
 
     public void PlayGame()
-    { SceneManager.LoadScene("GameScene"); } // Loads the first level
+    { SceneManager.LoadScene("Level1"); } // Loads the first level
 
     public void Level2()
     { SceneManager.LoadScene("Level2"); } // loads the second level

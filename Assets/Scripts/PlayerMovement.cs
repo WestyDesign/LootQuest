@@ -32,6 +32,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        //if (!GetComponent<PlayerMovement>().enabled)
+        //{
+        //    return; // don't update movement if not enabled
+        //}
+
         dirX = Input.GetAxisRaw("Horizontal"); // 'getaxisraw' makes the player stop moving immediately when they release the key
         rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y); // controls right 'n' left movement
 

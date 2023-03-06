@@ -28,6 +28,7 @@ public class PlayerLife : MonoBehaviour
     private void Die()
     {
         deathSound.Play();
+        anim.SetBool("OutOfControl", false); // prevents 'cheating death' via swapping characters at the last second
         anim.SetTrigger("Death"); // plays the death animation via a 'trigger' in the animator
         rb.bodyType = RigidbodyType2D.Static;
     }

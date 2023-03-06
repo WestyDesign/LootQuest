@@ -9,9 +9,19 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     [SerializeField] Transform player; // the player's position
+    [SerializeField] Transform crab; // the crab's position
+
+    public bool notCrab = true;
 
     void Update()
     {
-        transform.position = new Vector3(player.position.x, player.position.y, transform.position.z);
+        if(notCrab == true)
+        {
+            transform.position = new Vector3(player.position.x, player.position.y, transform.position.z);
+        }
+        else
+        {
+            transform.position = new Vector3(crab.position.x, crab.position.y, transform.position.z);
+        }
     }
 }

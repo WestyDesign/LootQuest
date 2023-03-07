@@ -12276,6 +12276,11 @@ PrefabInstance:
       propertyPath: pause
       value: 
       objectReference: {fileID: 1432517025}
+    - target: {fileID: 2923258106460377519, guid: f77dd15d8e152e947b76bcc4a22b41a0,
+        type: 3}
+      propertyPath: LCUI
+      value: 
+      objectReference: {fileID: 1614642529}
     - target: {fileID: 2923258106460377517, guid: f77dd15d8e152e947b76bcc4a22b41a0,
         type: 3}
       propertyPath: silverCoinsText

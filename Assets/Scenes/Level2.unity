@@ -1064,7 +1064,7 @@ RectTransform:
   - {fileID: 1093860203}
   - {fileID: 615983011}
   m_Father: {fileID: 656781598}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2587,9 +2587,9 @@ RectTransform:
   - {fileID: 933093032}
   - {fileID: 529961527}
   - {fileID: 246003104}
+  - {fileID: 388158981}
   - {fileID: 1715452239}
   - {fileID: 1432517026}
-  - {fileID: 388158981}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8613,7 +8613,7 @@ RectTransform:
   - {fileID: 1611293398}
   - {fileID: 734029488}
   m_Father: {fileID: 656781598}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8881,6 +8881,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pause: {fileID: 1432517025}
+  LCUI: {fileID: 388158980}
   jumpableGround:
     serializedVersion: 2
     m_Bits: 256
@@ -10337,7 +10338,7 @@ RectTransform:
   m_Children:
   - {fileID: 1672299307}
   m_Father: {fileID: 656781598}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

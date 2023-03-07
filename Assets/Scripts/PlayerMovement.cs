@@ -12,7 +12,8 @@ public class PlayerMovement : MonoBehaviour
     SpriteRenderer sprite;
     Animator anim;
     BoxCollider2D coll;
-    public GameObject pause;
+    public GameObject pause; // pause ui. appears when pressing ESC.
+    public GameObject LCUI; // level complete UI
 
     [SerializeField] LayerMask jumpableGround;
 
@@ -37,17 +38,27 @@ public class PlayerMovement : MonoBehaviour
         //    return; // don't update movement if not enabled
         //}
 
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(pause.activeInHierarchy == true)
+            {
+                pause.SetActive(false);
+            }
+            else
+                pause.SetActive(true);
+        }
+
+        if(pause.activeInHierarchy == true || LCUI.activeInHierarchy == true) // stops player moving if the level complete or pause UIs are up
+        {
+            return;
+        }
+
         dirX = Input.GetAxisRaw("Horizontal"); // 'getaxisraw' makes the player stop moving immediately when they release the key
         rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y); // controls right 'n' left movement
 
         if(Input.GetButtonDown("Jump") && IsGrounded()) // prevents holding space to fly off
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-        }
-
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            pause.SetActive(true);
         }
 
         UpdateAnimation();

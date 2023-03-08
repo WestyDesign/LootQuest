@@ -31,14 +31,10 @@ public class ExitDoor : MonoBehaviour
     }
 
     public void CompleteLevel() // for loading the next level
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+ 1);
-    }
+    { SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+ 1); }
 
-    public void ReplayLevel() // for loading the next level
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name); // reloads the current level.
-    }
+    public void ReplayLevel() // reloads the current level.
+    { SceneManager.LoadScene(SceneManager.GetActiveScene().name); }
 
     public void BacktoMenu() // for loading the next level
     {

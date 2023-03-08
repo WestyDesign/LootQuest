@@ -45,9 +45,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 0}
   possibleCharacters:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2923258106460377506, guid: f77dd15d8e152e947b76bcc4a22b41a0, type: 3}
+  - {fileID: 5741067072980363232, guid: c7f9da2fc2fb8c947806a5c9297a4f93, type: 3}
   whichCharacter: 0
-  playerAnim: {fileID: 0}
-  crabAnim: {fileID: 0}
+  playerAnim: {fileID: 2923258106460377518, guid: f77dd15d8e152e947b76bcc4a22b41a0,
+    type: 3}
+  crabAnim: {fileID: 5741067072980363244, guid: c7f9da2fc2fb8c947806a5c9297a4f93,
+    type: 3}
   cam: {fileID: 0}

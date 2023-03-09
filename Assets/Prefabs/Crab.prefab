@@ -169,6 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pause: {fileID: 0}
+  LCUI: {fileID: 0}
   jumpableGround:
     serializedVersion: 2
     m_Bits: 256
@@ -218,7 +219,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: f32d708a2fcb89846b02ee5dbdc82d63,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: f982b380d94e0ca42b7d1044079ad1d5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9e627bf8cd4a0c44e937b0ba83ecd532, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

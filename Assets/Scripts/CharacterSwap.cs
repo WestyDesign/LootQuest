@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 #endregion
 
+// Using pieces of this tutorial: https://youtu.be/Q-t0TQF6RAg
+
 public class CharacterSwap : MonoBehaviour
 {
     public Transform character; // the main man, cap'n clown nose
@@ -12,6 +14,7 @@ public class CharacterSwap : MonoBehaviour
     public Animator playerAnim;
     public Animator crabAnim;
     public CameraController cam;
+    private AudioSource swapSound;
 
     private void Start()
     {

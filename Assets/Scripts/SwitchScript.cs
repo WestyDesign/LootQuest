@@ -3,14 +3,20 @@ using UnityEngine;
 using System.Collections;
 #endregion
 
+// Using this tutorial: https://youtu.be/jWPkVxz79CI
+
 public class SwitchScript : MonoBehaviour 
 {
 	public DoorTrigger[] doorTrig;
 	Animator anim; // plays the animation of the button being up or down
 	public bool sticks; // if triggered, the button only needs to be pressed once & will 'stick' down
+	private AudioSource pressSound;
 
 	void Start () 
-    { anim = GetComponent<Animator> (); }
+    { 
+		anim = GetComponent<Animator> ();
+		pressSound = GetComponent<AudioSource>();
+	}
 	
 	void OnTriggerStay2D() // when player stands on button
 	{

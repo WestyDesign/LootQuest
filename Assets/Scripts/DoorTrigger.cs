@@ -3,6 +3,8 @@ using UnityEngine;
 using System.Collections;
 #endregion
 
+// Using this tutorial: https://youtu.be/jWPkVxz79CI
+
 public class DoorTrigger : MonoBehaviour 
 {
 	public DoorScript door;
